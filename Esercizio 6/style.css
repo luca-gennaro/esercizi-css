@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h-menu> div {
+display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+nav {
+    padding: 0px 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+
+}
+
+li,
+h1 {
+    margin-right: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    list-style-type: none;
+}
+
+input,
+button {
+    height: 40px;
+    border-radius: 5px;
+}
+
+button {
+    width: 80px;
+    border: 2px solid green;
+    color: green;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    ul,
+    input,
+    button {
+        display: none;
+    }
+
+    .h-menu > div {
+        display: inherit;
+    }
+}
